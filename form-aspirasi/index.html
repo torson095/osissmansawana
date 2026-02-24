@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="aspirasi-style.css"/>
+</head>
+<body>
+
+    <div class="form-container">
+      <div class="logo">
+        <svg id="Aspirasiku" viewBox="0 0 32 32"><path d="M9.31 9.94h-.03L7.19 7.7v-.04l7.4-1.91h.04l.02.01-2.37 3.78-2.93.4zm.14 19.87H9.4v-.08l2.51-5.27h-.01l-.02-.02-2.44-1.38-.02-.01-.03-.02 2.75-5.1v-.15L9.7 15.27v-.07l7.2-11.13.51-.7.5-.31 6.6-1.1.14.04.14.04.08.16.08.15-.04.2-.04.2-4.68 9.96-.48 1.04 2.2 1.01-.02.05-.02.05-3.72 4.2-.02.07-.03.07 1.46.59L15 24.33l.65.37.57.28-6.75 4.83zm6.32-15.07h.26l.66-.33.33-.5.1-.51-.18-.57-.37-.44-.65-.25-.64.1-.57.46-.2.48v.53l.1.24.1.24.35.32.45.23zm1.51-3.1h.3l.66-.33.33-.6v-.7l-.21-.42-.23-.2-.23-.18-.6-.17-.46.1-.47.32-.32.56v.72l.11.21.11.21.14.12.13.12.45.23zm1.4-2.96h.08l.55-.15.23-.2.24-.2.2-.48V7.1l-.16-.32-.15-.32-.63-.36h-.62l-.48.2-.4.47-.07.28-.08.28.1.5.29.45.37.28.46.1z" fill=currentColor></svg>
+        </div>
+        <form id="FormAspirasi">
+            <textarea name="message" id="PesanAspirasi" placeholder="Ketik disini..." required></textarea>
+            <div class="button-area">
+                <button type="submit" id="KirimAspirasi">Kirim</button>
+            </div>
+        </form>
+
+    </div>
+    <div style="position: absolute; top: 0; left: 0;" id="navbar-container"></div>
+  <script src="/navbar.js"></script>
+
+<script src="aspirasi-script.js" type="module"></script>
+</body>
+</html>

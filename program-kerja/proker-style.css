@@ -1,0 +1,140 @@
+:root {
+    --primary: #03abff;
+    --accent: #6c5ce7;
+    --white: #ffffff;
+    --bg-color: #f0f4f8;
+    --text-dark: #2d3436;
+    --text-light: #636e72;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    padding: 40px 20px;
+    color: #003178;
+
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* --- Card Styles --- */
+
+@media (min-width: 768px) {
+    
+.cardbox {
+    display: grid;
+    grid-template-areas:
+    'box1 box2'
+    'box3 box4';
+    gap: 20px;
+}
+
+.btn-card {
+    display: none !important;
+}
+
+.btn-card:hover {
+    display: none !important;
+  }
+  
+  .card p {
+    margin-bottom: 0 !important;
+   }
+}
+
+.card {
+    background: white;
+    margin: 50px 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(3, 171, 255, 0.2);
+}
+
+.card-image {
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+.card:hover .card-image img {
+    transform: scale(1.3);
+}
+.card-content {
+    padding: 10px 25px 25px;
+    position: relative;
+    box-shadow: 0 3px 30px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    margin: 0;
+
+}
+
+.card p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.status {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 50px;
+    color: white;
+
+}
+
+.ongoing { background: rgba(3, 171, 255, 0.85); }
+.completed { background: rgba(3, 200, 110); }
+.planned { background: rgba(239, 108, 0, 0.85); }
+
+.btn-card {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    background: var(--primary);
+    border: 2px solid var(--primary);
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.3s, box-shadow 300ms;
+    box-shadow: 0 15px 35px rgba(3, 171, 255, 0.2);
+    -webkit-tap-highlight-color: transparent ;
+}
+
+.btn-card:hover {
+    background: white;
+    color: var(--primary);
+    box-shadow: 0 15px 35px rgba(3, 171, 255, 0.2);
+}
